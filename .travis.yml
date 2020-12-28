@@ -5,3 +5,5 @@ before_install:
   - docker build -t amir/docker-react -f Dockerfile.dev .
 script:
   - docker run amir/docker-react npm run test -- --coverage
+notifications:
+  email: true
