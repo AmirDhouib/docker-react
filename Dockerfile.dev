@@ -7,5 +7,5 @@ COPY ./package.json /app
 RUN npm install
 
 COPY . /app
-amir
+
 CMD ["npm", "run", "start"]
